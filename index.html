@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="bn" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ─── Open Graph / WhatsApp Rich Card ─── -->
+  <meta property="og:title"       content="কুড়িগ্রাম জেলা নার্সারী মূল্যায়ন ২০২৬" />
+  <meta property="og:description" content="৯ উপজেলা | ১৩৬ নার্সারী | ২০.৫৫ লক্ষ চারা — পূর্ণাঙ্গ স্কোরকার্ড প্রতিবেদন" />
+  <meta property="og:image"       content="https://kurigram-report.vercel.app/cover.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:type"        content="article" />
+  <meta property="og:url"         content="https://kurigram-report.vercel.app/" />
+
+  <!-- Twitter Card fallback -->
+  <meta name="twitter:card"        content="summary_large_image" />
+  <meta name="twitter:title"       content="কুড়িগ্রাম জেলা নার্সারী মূল্যায়ন ২০২৬" />
+  <meta name="twitter:description" content="৯ উপজেলা | ১৩৬ নার্সারী | ২০.৫৫ লক্ষ চারা — পূর্ণাঙ্গ স্কোরকার্ড প্রতিবেদন" />
+  <meta name="twitter:image"       content="https://kurigram-report.vercel.app/cover.png" />
+
+  <title>কুড়িগ্রাম জেলা নার্সারী মূল্যায়ন ২০২৬</title>
+
+  <!-- Google Fonts: Noto Sans Bengali for proper Bengali rendering -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;500;600;700&family=Noto+Serif+Bengali:wght@500;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    /* ── Local Font Fallback ── */
+    @font-face {
+      font-family: 'Noto Sans Bengali';
+      src: url('fonts/NotoSansBengali.ttf') format('truetype');
+      font-weight: 100 900;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Noto Serif Bengali';
+      src: url('fonts/NotoSerifBengali.ttf') format('truetype');
+      font-weight: 100 900;
+      font-display: swap;
+    }
+
+    /* ── Reset & Base ── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Noto Sans Bengali', 'Noto Serif Bengali', sans-serif;
+      background: #070f0b;
+      color: #e0f0e8;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    /* ── Hero Section ── */
+    .hero {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 0 0 12px 12px;
+      box-shadow: 0 8px 40px rgba(0, 200, 120, 0.15);
+    }
+
+    /* ── Content Card ── */
+    .content {
+      width: 90%;
+      max-width: 800px;
+      margin: -40px auto 0;
+      position: relative;
+      z-index: 2;
+      background: linear-gradient(145deg, #0e2a1e, #0a1f15);
+      border: 1px solid #1a4d35;
+      border-radius: 16px;
+      padding: 40px 36px;
+      box-shadow: 0 12px 48px rgba(0, 0, 0, 0.5);
+    }
+
+    .content h1 {
+      font-size: 1.75rem;
+      color: #ffffff;
+      margin-bottom: 8px;
+      line-height: 1.4;
+    }
+
+    .content h2 {
+      font-size: 1.1rem;
+      color: #00e88a;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+
+    /* ── Stats Row ── */
+    .stats {
+      display: flex;
+      gap: 16px;
+      margin: 24px 0;
+      flex-wrap: wrap;
+    }
+
+    .stat-box {
+      flex: 1;
+      min-width: 140px;
+      background: #0a3d2a;
+      border: 1px solid #1a6045;
+      border-radius: 10px;
+      padding: 16px 18px;
+      text-align: center;
+    }
+
+    .stat-box .number {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #ffffff;
+    }
+
+    .stat-box .label {
+      font-size: 0.8rem;
+      color: #6bbf99;
+      margin-top: 4px;
+    }
+
+    /* ── Description ── */
+    .desc {
+      color: #a8d5c0;
+      font-size: 0.95rem;
+      line-height: 1.7;
+      margin: 20px 0;
+    }
+
+    /* ── Download Button ── */
+    .download-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: linear-gradient(135deg, #00c878, #00a860);
+      color: #021a0e;
+      font-size: 1.05rem;
+      font-weight: 700;
+      padding: 14px 32px;
+      border-radius: 10px;
+      text-decoration: none;
+      transition: transform 0.2s, box-shadow 0.2s;
+      box-shadow: 0 4px 20px rgba(0, 200, 120, 0.3);
+      margin-top: 12px;
+    }
+
+    .download-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 28px rgba(0, 200, 120, 0.45);
+    }
+
+    .download-btn:active {
+      transform: translateY(0);
+    }
+
+    .download-btn svg {
+      width: 22px;
+      height: 22px;
+    }
+
+    /* ── Footer ── */
+    .footer {
+      text-align: center;
+      color: #3d7a5f;
+      font-size: 0.78rem;
+      margin: 40px 0 30px;
+      line-height: 1.6;
+    }
+
+    .footer a {
+      color: #5aa888;
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* ── Responsive ── */
+    @media (max-width: 600px) {
+      .content {
+        padding: 28px 20px;
+        margin-top: -24px;
+      }
+      .content h1 { font-size: 1.35rem; }
+      .stat-box .number { font-size: 1.25rem; }
+      .stats { gap: 10px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ── Hero Cover Image ── -->
+  <div class="hero">
+    <img
+      src="cover.png"
+      alt="কুড়িগ্রাম জেলা নার্সারী মূল্যায়ন ২০২৬ — পূর্ণাঙ্গ প্রতিবেদন"
+      width="1200"
+      height="630"
+    />
+  </div>
+
+  <!-- ── Content Card ── -->
+  <div class="content">
+    <h1>কুড়িগ্রাম জেলা নার্সারী মূল্যায়ন ২০২৬</h1>
+    <h2>পূর্ণাঙ্গ স্কোরকার্ড প্রতিবেদন</h2>
+
+    <div class="stats">
+      <div class="stat-box">
+        <div class="number">৯</div>
+        <div class="label">উপজেলা</div>
+      </div>
+      <div class="stat-box">
+        <div class="number">১৩৬</div>
+        <div class="label">নার্সারী</div>
+      </div>
+      <div class="stat-box">
+        <div class="number">২০.৫৫ লক্ষ</div>
+        <div class="label">চারা উৎপাদিত</div>
+      </div>
+    </div>
+
+    <p class="desc">
+      কুড়িগ্রাম জেলার ৯টি উপজেলায় ১৩৬টি নিবন্ধিত ব্যক্তিগত নার্সারী থেকে মোট
+      ২০,৫৫,৮৩০টি চারা উৎপাদিত হচ্ছে। এই মূল্যায়ন প্রতিবেদনটি কৃষি সম্প্রসারণ অধিদপ্তর
+      (DAE), কুড়িগ্রাম কর্তৃক প্রস্তুত এবং উপজেলাভিত্তিক ফলাফল, ঘাটতি, প্রয়োজনীয়তা,
+      নির্দেশিকা ও কর্মপরিকল্পনা অন্তর্ভুক্ত করেছে।
+    </p>
+
+    <a
+      class="download-btn"
+      href="kurigram_nursery_report_2026.docx"
+      download="kurigram_nursery_report_2026.docx"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5m0 0l5-5m-5 5V3" />
+      </svg>
+      প্রতিবেদন ডাউনলোড (.docx)
+    </a>
+  </div>
+
+  <!-- ── Footer ── -->
+  <div class="footer">
+    কৃষি সম্প্রসারণ অধিদপ্তর (DAE) · কুড়িগ্রাম<br />
+    অতিরিক্ত উপপরিচালক (উদ্যান) | Rangpur Division
+  </div>
+
+</body>
+</html>
