@@ -3,104 +3,1122 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>কুড়িগ্রাম জেলা নার্সারী মূল্যায়ন প্রতিবেদন ২০২৬ | DAE Kurigram</title>
 
-  <!-- ─── Favicon ─── -->
-  <link rel="icon"             type="image/png" sizes="32x32"   href="favicon-32.png" />
-  <link rel="icon"             type="image/png" sizes="16x16"   href="favicon-16.png" />
-  <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="favicon.png" />
-  <link rel="shortcut icon"    type="image/png"                 href="favicon.png" />
+  <!-- ═══════════════════════════════════════════════
+       OPEN GRAPH — WhatsApp / Messenger / Telegram
+  ════════════════════════════════════════════════ -->
+  <meta property="og:type"               content="article" />
+  <meta property="og:site_name"          content="DAE Kurigram | কৃষি সম্প্রসারণ অধিদপ্তর" />
+  <meta property="og:title"             content="🌱 কুড়িগ্রাম নার্সারী মূল্যায়ন ২০২৬ — পূর্ণাঙ্গ স্কোরকার্ড প্রতিবেদন" />
+  <meta property="og:description"       content="৯ উপজেলা | ১৩৬ নার্সারী | ২০.৫৫ লক্ষ চারা — উপজেলাভিত্তিক ফলাফল, ঘাটতি, নির্দেশিকা ও কর্মপরিকল্পনা। ভূরুঙ্গামারী সর্বনিম্ন স্কোর ৩০/১০০ (F) — জরুরি সংশোধন প্রয়োজন।" />
+  <meta property="og:image"             content="https://kurigram-nursery-2026.vercel.app/og-cover.png" />
+  <meta property="og:image:width"       content="1200" />
+  <meta property="og:image:height"      content="630" />
+  <meta property="og:image:alt"         content="কুড়িগ্রাম নার্সারী মূল্যায়ন স্কোরকার্ড ২০২৬" />
+  <meta property="og:url"               content="https://kurigram-nursery-2026.vercel.app" />
+  <meta property="article:author"       content="অতিরিক্ত উপপরিচালক (উদ্যান), DAE কুড়িগ্রাম" />
+  <meta property="article:published_time" content="2026-04-23" />
 
-  <!-- ─── Open Graph (Facebook / Messenger / WhatsApp / Telegram) ─── -->
-  <meta property="og:title"       content="কুড়িগ্রাম জেলা নার্সারী মূল্যায়ন ২০২৬" />
-  <meta property="og:description" content="৯ উপজেলা | ১৩৬ নার্সারী | ২০.৫৫ লক্ষ চারা — পূর্ণাঙ্গ স্কোরকার্ড প্রতিবেদন" />
-  <meta property="og:image"       content="https://nursery-report.vercel.app/cover-1200x630.png" />
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
-  <meta property="og:type"        content="article" />
-  <meta property="og:url"         content="https://nursery-report.vercel.app/" />
-  <meta property="og:site_name"   content="DAE Kurigram" />
-  <meta property="og:locale"      content="bn_BD" />
+  <!-- Twitter Card (also used by many apps) -->
+  <meta name="twitter:card"        content="summary_large_image" />
+  <meta name="twitter:title"       content="কুড়িগ্রাম নার্সারী মূল্যায়ন ২০২৬ | DAE Kurigram" />
+  <meta name="twitter:description" content="৯ উপজেলায় ১৩৬ নার্সারীর পূর্ণাঙ্গ স্কোরকার্ড মূল্যায়ন — ২০.৫৫ লক্ষ চারা বিশ্লেষণ" />
+  <meta name="twitter:image"       content="https://kurigram-nursery-2026.vercel.app/og-cover.png" />
 
-  <title>কুড়িগ্রাম জেলা নার্সারী মূল্যায়ন ২০২৬</title>
+  <!-- WhatsApp specifically reads og:image — ensure it's absolute URL above -->
 
-  <!-- Google Fonts: Noto Sans Bengali -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;500;600;700&family=Noto+Serif+Bengali:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&family=Hind+Siliguri:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 
   <style>
-    /* ── Local Font Fallback ── */
-    @font-face {
-      font-family: 'Noto Sans Bengali';
-      src: url('fonts/NotoSansBengali.ttf') format('truetype');
-      font-weight: 100 900;
-      font-display: swap;
-    }
-    @font-face {
-      font-family: 'Noto Serif Bengali';
-      src: url('fonts/NotoSerifBengali.ttf') format('truetype');
-      font-weight: 100 900;
-      font-display: swap;
+    /* ── TOKENS ─────────────────────────────────────── */
+    :root {
+      --teal:       #0E7490;
+      --teal-mid:   #0891B2;
+      --teal-light: #CFFAFE;
+      --teal-glow:  #06B6D4;
+      --gold:       #B45309;
+      --amber:      #F59E0B;
+      --red:        #DC2626;
+      --red-soft:   #FEF2F2;
+      --green:      #15803D;
+      --green-soft: #F0FDF4;
+      --ink:        #0C1A1F;
+      --ink-mid:    #1E3A42;
+      --muted:      #64748B;
+      --surface:    #F8FAFB;
+      --white:      #FFFFFF;
+      --border:     #CBD5E1;
+      --font-bn:    'Hind Siliguri', sans-serif;
+      --font-en:    'DM Sans', sans-serif;
+      --font-head:  'Playfair Display', serif;
     }
 
-    /* ── Reset & Base ── */
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
+    html { scroll-behavior: smooth; }
+
     body {
-      font-family: 'Noto Sans Bengali', 'Noto Serif Bengali', sans-serif;
-      background: #070f0b;
-      color: #e0f0e8;
+      font-family: var(--font-bn);
+      background: var(--surface);
+      color: var(--ink);
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    /* ── HERO ─────────────────────────────────────────── */
+    .hero {
+      position: relative;
       min-height: 100vh;
       display: flex;
       flex-direction: column;
-      align-items: center;
-    }
-
-    /* ── Hero Section ── */
-    .hero {
-      width: 100%;
-      max-width: 1200px;
-      margin: 0 auto;
-      position: relative;
+      justify-content: center;
       overflow: hidden;
+      background: var(--ink);
     }
 
-    .hero img {
-      width: 100%;
-      height: auto;
-      display: block;
-      border-radius: 0 0 12px 12px;
-      box-shadow: 0 8px 40px rgba(0, 200, 120, 0.15);
+    /* animated mesh background */
+    .hero-bg {
+      position: absolute; inset: 0;
+      background:
+        radial-gradient(ellipse 80% 60% at 20% 30%, #0E7490 0%, transparent 60%),
+        radial-gradient(ellipse 60% 80% at 80% 70%, #0C4A6E 0%, transparent 55%),
+        radial-gradient(ellipse 40% 40% at 60% 10%, #064E3B 0%, transparent 50%),
+        #050E12;
+      animation: breathe 8s ease-in-out infinite alternate;
+    }
+    @keyframes breathe {
+      from { opacity: 1; }
+      to   { opacity: 0.85; }
     }
 
-    /* ── Content Card ── */
-    .content {
-      width: 90%;
-      max-width: 800px;
-      margin: -40px auto 0;
+    /* grain overlay */
+    .hero-bg::after {
+      content: '';
+      position: absolute; inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+      opacity: 0.4;
+    }
+
+    .hero-inner {
       position: relative;
       z-index: 2;
-      background: linear-gradient(145deg, #0e2a1e, #0a1f15);
-      border: 1px solid #1a4d35;
-      border-radius: 16px;
-      padding: 40px 36px;
-      box-shadow: 0 12px 48px rgba(0, 0, 0, 0.5);
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 80px 32px 60px;
     }
 
-    .content h1 {
-      font-family: 'Noto Serif Bengali', serif;
-      font-size: 1.75rem;
-      color: #ffffff;
+    /* DAE badge */
+    .dae-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: rgba(6,182,212,0.15);
+      border: 1px solid rgba(6,182,212,0.35);
+      color: var(--teal-glow);
+      font-family: var(--font-en);
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      padding: 8px 18px;
+      border-radius: 100px;
+      margin-bottom: 36px;
+      animation: fadeUp 0.6s ease both;
+    }
+    .dae-badge::before {
+      content: '';
+      width: 8px; height: 8px;
+      background: var(--teal-glow);
+      border-radius: 50%;
+      animation: pulse 2s ease-in-out infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); opacity: 1; }
+      50%       { transform: scale(1.4); opacity: 0.6; }
+    }
+
+    .hero-title {
+      font-family: var(--font-bn);
+      font-weight: 700;
+      font-size: clamp(2.4rem, 5vw, 4.2rem);
+      color: var(--white);
+      line-height: 1.2;
+      margin-bottom: 12px;
+      animation: fadeUp 0.7s 0.1s ease both;
+    }
+    .hero-title span { color: var(--teal-glow); }
+
+    .hero-subtitle {
+      font-family: var(--font-en);
+      font-size: clamp(1rem, 2vw, 1.35rem);
+      color: rgba(255,255,255,0.55);
+      margin-bottom: 48px;
+      font-weight: 300;
+      letter-spacing: 0.5px;
+      animation: fadeUp 0.7s 0.2s ease both;
+    }
+
+    /* KPI strip */
+    .kpi-strip {
+      display: flex;
+      gap: 1px;
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 14px;
+      overflow: hidden;
+      margin-bottom: 48px;
+      animation: fadeUp 0.7s 0.3s ease both;
+    }
+    .kpi {
+      flex: 1;
+      padding: 24px 20px;
+      text-align: center;
+      background: rgba(255,255,255,0.04);
+      transition: background 0.2s;
+    }
+    .kpi:hover { background: rgba(6,182,212,0.1); }
+    .kpi-val {
+      font-family: var(--font-head);
+      font-size: clamp(1.6rem, 3vw, 2.4rem);
+      font-weight: 900;
+      color: var(--teal-glow);
+      line-height: 1;
       margin-bottom: 6px;
-      line-height: 1.4;
+    }
+    .kpi-label {
+      font-family: var(--font-bn);
+      font-size: 0.8rem;
+      color: rgba(255,255,255,0.5);
     }
 
-    .content h2 {
-      font-family: 'Noto Serif Bengali', serif;
-      font-size: 1.1rem;
-      color: #b8e6c9;
+    /* CTA row */
+    .cta-row {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      animation: fadeUp 0.7s 0.4s ease both;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 16px 32px;
+      border-radius: 8px;
+      font-family: var(--font-bn);
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      border: none;
+      text-decoration: none;
+      transition: transform 0.18s, box-shadow 0.18s, opacity 0.18s;
+    }
+    .btn:hover { transform: translateY(-2px); }
+    .btn-primary {
+      background: var(--teal-glow);
+      color: var(--ink);
+      box-shadow: 0 8px 32px rgba(6,182,212,0.35);
+    }
+    .btn-primary:hover { box-shadow: 0 12px 40px rgba(6,182,212,0.5); }
+    .btn-secondary {
+      background: rgba(255,255,255,0.08);
+      color: rgba(255,255,255,0.85);
+      border: 1px solid rgba(255,255,255,0.18);
+    }
+    .btn-secondary:hover { background: rgba(255,255,255,0.13); }
+
+    /* scroll hint */
+    .scroll-hint {
+      position: absolute;
+      bottom: 32px; left: 50%;
+      transform: translateX(-50%);
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+      color: rgba(255,255,255,0.3);
+      font-family: var(--font-en);
+      font-size: 11px;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      animation: fadeUp 1s 1s ease both;
+    }
+    .scroll-arrow {
+      width: 20px; height: 20px;
+      border-right: 2px solid rgba(255,255,255,0.3);
+      border-bottom: 2px solid rgba(255,255,255,0.3);
+      transform: rotate(45deg);
+      animation: bounce 1.6s ease-in-out infinite;
+    }
+    @keyframes bounce {
+      0%, 100% { transform: rotate(45deg) translateY(0); }
+      50%       { transform: rotate(45deg) translateY(6px); }
+    }
+
+    /* ── ALERT BAND ──────────────────────────────────── */
+    .alert-band {
+      background: var(--red);
+      color: white;
+      padding: 14px 32px;
+      text-align: center;
+      font-size: 0.9rem;
+      font-weight: 600;
+      letter-spacing: 0.3px;
+    }
+    .alert-band strong { font-weight: 700; }
+
+    /* ── SECTIONS ────────────────────────────────────── */
+    section { padding: 80px 32px; }
+    .container { max-width: 1100px; margin: 0 auto; }
+
+    .section-label {
+      font-family: var(--font-en);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--teal);
       margin-bottom: 12px;
     }
+    .section-title {
+      font-family: var(--font-bn);
+      font-size: clamp(1.6rem, 3vw, 2.4rem);
+      font-weight: 700;
+      color: var(--ink);
+      margin-bottom: 48px;
+      line-height: 1.3;
+    }
+
+    /* ── SCORECARD ───────────────────────────────────── */
+    .scorecard-section { background: var(--white); }
+
+    .scorecard-grid {
+      display: grid;
+      gap: 12px;
+    }
+    .score-row {
+      display: grid;
+      grid-template-columns: 2fr 80px 80px 80px 80px 80px 110px;
+      gap: 8px;
+      align-items: center;
+      padding: 16px 20px;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+      transition: border-color 0.2s, box-shadow 0.2s;
+      background: var(--surface);
+    }
+    .score-row:hover {
+      border-color: var(--teal-mid);
+      box-shadow: 0 4px 16px rgba(14,116,144,0.1);
+    }
+    .score-row.header {
+      background: var(--ink);
+      border-color: var(--ink);
+      color: rgba(255,255,255,0.6);
+      font-family: var(--font-en);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      pointer-events: none;
+    }
+    .upazila-name {
+      font-weight: 600;
+      font-size: 1rem;
+    }
+    .rank-badge {
+      font-family: var(--font-en);
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--muted);
+    }
+    .score-cell {
+      font-family: var(--font-en);
+      font-size: 0.9rem;
+      text-align: center;
+      color: var(--ink-mid);
+    }
+    .total-cell {
+      font-family: var(--font-en);
+      font-size: 1rem;
+      font-weight: 700;
+      text-align: center;
+    }
+    .grade-pill {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 36px; height: 36px;
+      border-radius: 8px;
+      font-family: var(--font-en);
+      font-size: 0.85rem;
+      font-weight: 800;
+      letter-spacing: 0.5px;
+    }
+    .grade-C { background: #FEF3C7; color: #92400E; }
+    .grade-D { background: #FFEDD5; color: #9A3412; }
+    .grade-F { background: #FEE2E2; color: #991B1B; }
+
+    .status-chip {
+      font-family: var(--font-bn);
+      font-size: 0.75rem;
+      font-weight: 600;
+      padding: 4px 12px;
+      border-radius: 100px;
+      text-align: center;
+    }
+    .status-medium  { background: #DBEAFE; color: #1E40AF; }
+    .status-minor   { background: #F3F4F6; color: #374151; }
+    .status-high    { background: #FFEDD5; color: #9A3412; }
+    .status-na      { background: #F3F4F6; color: #6B7280; }
+    .status-urgent  { background: #FEE2E2; color: #991B1B; animation: urgentPulse 2s ease-in-out infinite; }
+    @keyframes urgentPulse {
+      0%, 100% { opacity: 1; }
+      50%       { opacity: 0.65; }
+    }
+
+    /* ── PRODUCTION ──────────────────────────────────── */
+    .production-section { background: var(--surface); }
+
+    .prod-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      margin-bottom: 48px;
+    }
+    .prod-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 28px;
+      position: relative;
+      overflow: hidden;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .prod-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 40px rgba(0,0,0,0.08);
+    }
+    .prod-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 4px;
+      background: var(--card-accent, var(--teal));
+    }
+    .prod-card-icon {
+      font-size: 2rem;
+      margin-bottom: 16px;
+    }
+    .prod-card-val {
+      font-family: var(--font-head);
+      font-size: 2rem;
+      font-weight: 900;
+      color: var(--ink);
+      line-height: 1;
+      margin-bottom: 4px;
+    }
+    .prod-card-label {
+      font-size: 0.85rem;
+      color: var(--muted);
+      margin-bottom: 16px;
+    }
+    .prod-bar-bg {
+      height: 6px;
+      background: var(--border);
+      border-radius: 100px;
+      overflow: hidden;
+    }
+    .prod-bar-fill {
+      height: 100%;
+      border-radius: 100px;
+      background: var(--card-accent, var(--teal));
+      transition: width 1.2s cubic-bezier(0.4,0,0.2,1);
+    }
+
+    /* ── URGENCY ─────────────────────────────────────── */
+    .urgency-section {
+      background: #0C1A1F;
+      color: white;
+    }
+    .urgency-section .section-label { color: #F87171; }
+    .urgency-section .section-title { color: var(--white); }
+
+    .urgency-bars {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+    .urg-row {
+      display: grid;
+      grid-template-columns: 160px 1fr 120px;
+      gap: 16px;
+      align-items: center;
+    }
+    .urg-name {
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: rgba(255,255,255,0.85);
+      text-align: right;
+    }
+    .urg-bar-bg {
+      height: 28px;
+      background: rgba(255,255,255,0.07);
+      border-radius: 6px;
+      overflow: hidden;
+      position: relative;
+    }
+    .urg-bar-fill {
+      height: 100%;
+      border-radius: 6px;
+      transition: width 1.4s cubic-bezier(0.4,0,0.2,1);
+      display: flex;
+      align-items: center;
+      padding-left: 12px;
+      font-family: var(--font-en);
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: white;
+    }
+    .urg-count {
+      font-family: var(--font-en);
+      font-size: 0.85rem;
+      color: rgba(255,255,255,0.55);
+      text-align: right;
+    }
+
+    /* ── DATA QUALITY ─────────────────────────────────── */
+    .quality-section { background: var(--white); }
+
+    .quality-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+    }
+    .quality-card {
+      padding: 24px;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      position: relative;
+    }
+    .quality-card.critical {
+      border-color: #FCA5A5;
+      background: #FFF5F5;
+    }
+    .quality-card.warning {
+      border-color: #FCD34D;
+      background: #FFFBEB;
+    }
+    .quality-card.good {
+      border-color: #86EFAC;
+      background: #F0FDF4;
+    }
+    .quality-upazila {
+      font-weight: 700;
+      font-size: 0.95rem;
+      margin-bottom: 16px;
+    }
+    .quality-metric {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 8px;
+      font-size: 0.82rem;
+    }
+    .quality-metric-label { color: var(--muted); }
+    .quality-metric-val {
+      font-family: var(--font-en);
+      font-weight: 700;
+    }
+    .val-bad  { color: var(--red); }
+    .val-warn { color: var(--gold); }
+    .val-good { color: var(--green); }
+
+    /* ── DOWNLOAD ────────────────────────────────────── */
+    .download-section {
+      background: linear-gradient(135deg, #0E7490 0%, #0C4A6E 100%);
+      color: white;
+      text-align: center;
+    }
+    .download-section .section-title { color: white; margin-bottom: 16px; }
+    .download-desc {
+      font-size: 1rem;
+      color: rgba(255,255,255,0.7);
+      margin-bottom: 40px;
+      max-width: 520px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .download-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      background: var(--white);
+      color: var(--teal);
+      font-family: var(--font-bn);
+      font-size: 1.05rem;
+      font-weight: 700;
+      padding: 18px 42px;
+      border-radius: 10px;
+      text-decoration: none;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+      transition: transform 0.18s, box-shadow 0.18s;
+    }
+    .download-btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 14px 40px rgba(0,0,0,0.35);
+    }
+    .download-meta {
+      margin-top: 20px;
+      font-family: var(--font-en);
+      font-size: 0.8rem;
+      color: rgba(255,255,255,0.45);
+      letter-spacing: 0.5px;
+    }
+
+    /* ── FOOTER ──────────────────────────────────────── */
+    footer {
+      background: var(--ink);
+      color: rgba(255,255,255,0.4);
+      text-align: center;
+      padding: 28px 32px;
+      font-family: var(--font-en);
+      font-size: 0.8rem;
+    }
+
+    /* ── ANIMATIONS ──────────────────────────────────── */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ── RESPONSIVE ──────────────────────────────────── */
+    @media (max-width: 768px) {
+      .kpi-strip { flex-wrap: wrap; }
+      .kpi { min-width: 45%; }
+      .score-row {
+        grid-template-columns: 1fr 60px 60px 60px 60px 60px 90px;
+        font-size: 0.82rem;
+        gap: 4px;
+        padding: 12px;
+      }
+      .urg-row { grid-template-columns: 110px 1fr 90px; }
+      section { padding: 56px 20px; }
+      .hero-inner { padding: 60px 20px 50px; }
+    }
+    @media (max-width: 520px) {
+      .score-row { grid-template-columns: 1fr 50px 50px; }
+      .score-row .score-cell:nth-child(3),
+      .score-row .score-cell:nth-child(4),
+      .score-row .score-cell:nth-child(5) { display: none; }
+      .urg-row { grid-template-columns: 100px 1fr; }
+      .urg-count { display: none; }
+    }
   </style>
-</head>      
-  
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════════════════
+       HERO
+  ═══════════════════════════════════════════════════ -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-inner">
+      <div class="dae-badge">DAE Kurigram &nbsp;•&nbsp; Rangpur Division &nbsp;•&nbsp; April 2026</div>
+
+      <h1 class="hero-title">
+        কুড়িগ্রাম জেলা<br/>
+        <span>নার্সারী মূল্যায়ন</span><br/>
+        পূর্ণাঙ্গ প্রতিবেদন ২০২৬
+      </h1>
+      <p class="hero-subtitle">
+        Upazila Scorecard v2.0 &nbsp;|&nbsp; উপজেলাভিত্তিক ফলাফল, ঘাটতি, নির্দেশিকা ও কর্মপরিকল্পনা
+      </p>
+
+      <div class="kpi-strip">
+        <div class="kpi">
+          <div class="kpi-val">১৩৬</div>
+          <div class="kpi-label">নিবন্ধিত নার্সারী</div>
+        </div>
+        <div class="kpi">
+          <div class="kpi-val">২০.৫৫ লক্ষ</div>
+          <div class="kpi-label">মোট চারা</div>
+        </div>
+        <div class="kpi">
+          <div class="kpi-val">৯</div>
+          <div class="kpi-label">উপজেলা</div>
+        </div>
+        <div class="kpi">
+          <div class="kpi-val">৬.৬ লক্ষ+</div>
+          <div class="kpi-label">অতি-পরিণত চারা ⚠</div>
+        </div>
+      </div>
+
+      <div class="cta-row">
+        <a href="#download" class="btn btn-primary">
+          ⬇ প্রতিবেদন ডাউনলোড করুন
+        </a>
+        <a href="#scorecard" class="btn btn-secondary">
+          📊 স্কোরকার্ড দেখুন
+        </a>
+      </div>
+    </div>
+    <div class="scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════
+       ALERT BAND
+  ═══════════════════════════════════════════════════ -->
+  <div class="alert-band">
+    🚨 <strong>জরুরি:</strong> ভূরুঙ্গামারী — ০% GPS, ০% মোবাইল, ১৭টি অ্যানোমালি, স্কোর ৩০/১০০ (F) — তাৎক্ষণিক ব্যবস্থা প্রয়োজন
+  </div>
+
+  <!-- ══════════════════════════════════════════════════
+       SCORECARD
+  ═══════════════════════════════════════════════════ -->
+  <section class="scorecard-section" id="scorecard">
+    <div class="container">
+      <p class="section-label reveal">Upazila Scorecard v2.0</p>
+      <h2 class="section-title reveal">উপজেলা মূল্যায়ন র্যাংকিং</h2>
+
+      <div class="scorecard-grid reveal">
+
+        <div class="score-row header">
+          <div>উপজেলা</div>
+          <div style="text-align:center">ক (১০)</div>
+          <div style="text-align:center">খ (২৮)</div>
+          <div style="text-align:center">গ (২৫)</div>
+          <div style="text-align:center">মোট</div>
+          <div style="text-align:center">গ্রেড</div>
+          <div style="text-align:center">স্ট্যাটাস</div>
+        </div>
+
+        <!-- Rows -->
+        <div class="score-row">
+          <div><span class="rank-badge">#1 &nbsp;</span><span class="upazila-name">উলিপুর</span></div>
+          <div class="score-cell">8</div>
+          <div class="score-cell">25</div>
+          <div class="score-cell">25</div>
+          <div class="total-cell" style="color:#0E7490">58</div>
+          <div><span class="grade-pill grade-C">C</span></div>
+          <div><span class="status-chip status-medium">মিডিয়াম</span></div>
+        </div>
+
+        <div class="score-row">
+          <div><span class="rank-badge">#2 &nbsp;</span><span class="upazila-name">ফুলবাড়ী</span></div>
+          <div class="score-cell">10</div>
+          <div class="score-cell">25</div>
+          <div class="score-cell">22</div>
+          <div class="total-cell" style="color:#0E7490">57</div>
+          <div><span class="grade-pill grade-C">C</span></div>
+          <div><span class="status-chip status-medium">মিডিয়াম</span></div>
+        </div>
+
+        <div class="score-row">
+          <div><span class="rank-badge">#3 &nbsp;</span><span class="upazila-name">নাগেশ্বরী</span></div>
+          <div class="score-cell">10</div>
+          <div class="score-cell">25</div>
+          <div class="score-cell">13</div>
+          <div class="total-cell" style="color:#D97706">48</div>
+          <div><span class="grade-pill grade-D">D</span></div>
+          <div><span class="status-chip status-medium">মিডিয়াম</span></div>
+        </div>
+
+        <div class="score-row">
+          <div><span class="rank-badge">#4 &nbsp;</span><span class="upazila-name">চিলমারী</span></div>
+          <div class="score-cell">10</div>
+          <div class="score-cell">21</div>
+          <div class="score-cell">13</div>
+          <div class="total-cell" style="color:#D97706">44</div>
+          <div><span class="grade-pill grade-D">D</span></div>
+          <div><span class="status-chip status-minor">মাইনর</span></div>
+        </div>
+
+        <div class="score-row">
+          <div><span class="rank-badge">#5 &nbsp;</span><span class="upazila-name">রৌমারী</span></div>
+          <div class="score-cell">2</div>
+          <div class="score-cell">28</div>
+          <div class="score-cell">13</div>
+          <div class="total-cell" style="color:#D97706">43</div>
+          <div><span class="grade-pill grade-D">D</span></div>
+          <div><span class="status-chip status-minor">মাইনর</span></div>
+        </div>
+
+        <div class="score-row">
+          <div><span class="rank-badge">#6 &nbsp;</span><span class="upazila-name">চর রাজিবপুর</span></div>
+          <div class="score-cell">10</div>
+          <div class="score-cell">15</div>
+          <div class="score-cell">17</div>
+          <div class="total-cell" style="color:#D97706">42</div>
+          <div><span class="grade-pill grade-D">D</span></div>
+          <div><span class="status-chip status-high">উচ্চ</span></div>
+        </div>
+
+        <div class="score-row">
+          <div><span class="rank-badge">#7 &nbsp;</span><span class="upazila-name">রাজারহাট</span></div>
+          <div class="score-cell">10</div>
+          <div class="score-cell">18</div>
+          <div class="score-cell">13</div>
+          <div class="total-cell" style="color:#D97706">41</div>
+          <div><span class="grade-pill grade-D">D</span></div>
+          <div><span class="status-chip status-na">নাই</span></div>
+        </div>
+
+        <div class="score-row">
+          <div><span class="rank-badge">#8 &nbsp;</span><span class="upazila-name">কুড়িগ্রাম সদর</span></div>
+          <div class="score-cell">2</div>
+          <div class="score-cell">12</div>
+          <div class="score-cell">25</div>
+          <div class="total-cell" style="color:#DC2626">39</div>
+          <div><span class="grade-pill grade-F">F</span></div>
+          <div><span class="status-chip status-high">উচ্চ</span></div>
+        </div>
+
+        <div class="score-row">
+          <div><span class="rank-badge">#9 &nbsp;</span><span class="upazila-name">ভূরুঙ্গামারী</span></div>
+          <div class="score-cell">2</div>
+          <div class="score-cell">9</div>
+          <div class="score-cell">19</div>
+          <div class="total-cell" style="color:#DC2626">30</div>
+          <div><span class="grade-pill grade-F">F</span></div>
+          <div><span class="status-chip status-urgent">🚨 জরুরি</span></div>
+        </div>
+
+      </div><!-- /scorecard-grid -->
+
+      <p style="margin-top:20px; font-size:0.8rem; color:var(--muted); font-family:var(--font-en)">
+        ক = ডেটা সম্পূর্ণতা (১০) &nbsp;|&nbsp; খ = ডেটা নির্ভুলতা (২৮) &nbsp;|&nbsp; গ = উৎপাদন কর্মক্ষমতা (২৫) &nbsp;|&nbsp; সম্পৃক্ততা স্কোর (ঘ: ২০) পরবর্তী মূল্যায়নে যুক্ত হবে
+      </p>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════
+       PRODUCTION
+  ═══════════════════════════════════════════════════ -->
+  <section class="production-section">
+    <div class="container">
+      <p class="section-label reveal">Production Analysis</p>
+      <h2 class="section-title reveal">চারা উৎপাদন বিশ্লেষণ</h2>
+
+      <div class="prod-cards">
+        <div class="prod-card reveal" style="--card-accent:#0E7490">
+          <div class="prod-card-icon">🌳</div>
+          <div class="prod-card-val">১৪,৪৬,৪৩০</div>
+          <div class="prod-card-label">ফলদ চারা (Fruit Seedlings)</div>
+          <div class="prod-bar-bg"><div class="prod-bar-fill" style="width:70.1%"></div></div>
+          <p style="font-size:0.78rem;color:var(--muted);margin-top:6px;font-family:var(--font-en)">70.1% of total</p>
+        </div>
+
+        <div class="prod-card reveal" style="--card-accent:#15803D">
+          <div class="prod-card-icon">🌲</div>
+          <div class="prod-card-val">৪,৬৩,৩০০</div>
+          <div class="prod-card-label">বনজ চারা (Forest Seedlings)</div>
+          <div class="prod-bar-bg"><div class="prod-bar-fill" style="width:23.3%;background:#15803D"></div></div>
+          <p style="font-size:0.78rem;color:var(--muted);margin-top:6px;font-family:var(--font-en)">23.3% of total — 100% seed-based</p>
+        </div>
+
+        <div class="prod-card reveal" style="--card-accent:#B45309">
+          <div class="prod-card-icon">🌿</div>
+          <div class="prod-card-val">২,৪৬,৯০০</div>
+          <div class="prod-card-label">ঔষধি চারা (Medicinal Plants)</div>
+          <div class="prod-bar-bg"><div class="prod-bar-fill" style="width:6.6%;background:#B45309"></div></div>
+          <p style="font-size:0.78rem;color:var(--muted);margin-top:6px;font-family:var(--font-en)">6.6% of total</p>
+        </div>
+
+        <div class="prod-card reveal" style="--card-accent:#7C3AED">
+          <div class="prod-card-icon">🔬</div>
+          <div class="prod-card-val">৬১.৪% বীজ</div>
+          <div class="prod-card-label">প্রচার পদ্ধতি (Propagation Method)</div>
+          <div class="prod-bar-bg"><div class="prod-bar-fill" style="width:61.4%;background:#7C3AED"></div></div>
+          <p style="font-size:0.78rem;color:var(--muted);margin-top:6px;font-family:var(--font-en)">38.6% grafting (কলম)</p>
+        </div>
+      </div>
+
+      <p class="reveal" style="font-size:0.95rem;color:var(--muted);text-align:center;padding:16px;background:var(--white);border-radius:10px;border:1px solid var(--border)">
+        📍 শীর্ষ ৩ উপজেলা — <strong style="color:var(--teal)">নাগেশ্বরী + ফুলবাড়ী + রাজারহাট</strong> — মোট উৎপাদনের <strong>৭৪%</strong> অবদান রাখে
+      </p>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════
+       URGENCY — OVERMATURE
+  ═══════════════════════════════════════════════════ -->
+  <section class="urgency-section">
+    <div class="container">
+      <p class="section-label reveal">Emergency Planting Index</p>
+      <h2 class="section-title reveal">অতি-পরিণত চারা জরুরি রোপণ সূচক</h2>
+      <p class="reveal" style="color:rgba(255,255,255,0.55); margin-bottom:40px; font-size:0.95rem;">
+        ২+ বছর বয়সী চারা দ্রুত রোপণ না করলে গুণমান, বেঁচে থাকার হার ও অর্থনৈতিক মূল্য হ্রাস পাবে।
+        মোট ঝুঁকিপূর্ণ চারা: <strong style="color:#F87171">~৬,৬০,০০০+</strong>
+      </p>
+
+      <div class="urgency-bars reveal">
+        <div class="urg-row">
+          <div class="urg-name">নাগেশ্বরী</div>
+          <div class="urg-bar-bg">
+            <div class="urg-bar-fill" style="width:67.8%; background:linear-gradient(90deg,#DC2626,#EF4444)">67.8%</div>
+          </div>
+          <div class="urg-count">~৩,৯৯,৮০০</div>
+        </div>
+        <div class="urg-row">
+          <div class="urg-name">রৌমারী</div>
+          <div class="urg-bar-bg">
+            <div class="urg-bar-fill" style="width:67.7%; background:linear-gradient(90deg,#DC2626,#EF4444)">67.7%</div>
+          </div>
+          <div class="urg-count">~৬৮,৪৮০</div>
+        </div>
+        <div class="urg-row">
+          <div class="urg-name">রাজারহাট</div>
+          <div class="urg-bar-bg">
+            <div class="urg-bar-fill" style="width:65.3%; background:linear-gradient(90deg,#DC2626,#EF4444)">65.3%</div>
+          </div>
+          <div class="urg-count">~১,৬২,১৮০</div>
+        </div>
+        <div class="urg-row">
+          <div class="urg-name">চিলমারী</div>
+          <div class="urg-bar-bg">
+            <div class="urg-bar-fill" style="width:35.7%; background:linear-gradient(90deg,#D97706,#F59E0B)">35.7%</div>
+          </div>
+          <div class="urg-count">~২৫০</div>
+        </div>
+        <div class="urg-row">
+          <div class="urg-name">চর রাজিবপুর</div>
+          <div class="urg-bar-bg">
+            <div class="urg-bar-fill" style="width:18.2%; background:linear-gradient(90deg,#0369A1,#0EA5E9)">18.2%</div>
+          </div>
+          <div class="urg-count">~২,৩৩৭</div>
+        </div>
+        <div class="urg-row">
+          <div class="urg-name">কুড়িগ্রাম সদর</div>
+          <div class="urg-bar-bg">
+            <div class="urg-bar-fill" style="width:8.8%; background:linear-gradient(90deg,#0369A1,#0EA5E9)">8.8%</div>
+          </div>
+          <div class="urg-count">~২৬,১০০</div>
+        </div>
+        <div class="urg-row">
+          <div class="urg-name">উলিপুর</div>
+          <div class="urg-bar-bg">
+            <div class="urg-bar-fill" style="width:5.8%; background:linear-gradient(90deg,#065F46,#10B981)">5.8%</div>
+          </div>
+          <div class="urg-count">~১০,৫৮২</div>
+        </div>
+        <div class="urg-row">
+          <div class="urg-name">ফুলবাড়ী</div>
+          <div class="urg-bar-bg">
+            <div class="urg-bar-fill" style="width:4.2%; background:linear-gradient(90deg,#065F46,#10B981)">4.2%</div>
+          </div>
+          <div class="urg-count">~২৪,৫৫১</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════
+       DATA QUALITY
+  ═══════════════════════════════════════════════════ -->
+  <section class="quality-section">
+    <div class="container">
+      <p class="section-label reveal">Data Quality Assessment</p>
+      <h2 class="section-title reveal">ডেটা গুণমাল মূল্যায়ন</h2>
+
+      <div class="quality-grid reveal">
+
+        <div class="quality-card critical">
+          <div class="quality-upazila">🚨 ভূরুঙ্গামারী</div>
+          <div class="quality-metric">
+            <span class="quality-metric-label">মোবাইল কভারেজ</span>
+            <span class="quality-metric-val val-bad">0%</span>
+          </div>
+          <div class="quality-metric">
+            <span class="quality-metric-label">GPS বৈধতা</span>
+            <span class="quality-metric-val val-bad">0%</span>
+          </div>
+          <div class="quality-metric">
+            <span class="quality-metric-label">অ্যানোমালি</span>
+            <span class="quality-metric-val val-bad">17</span>
+          </div>
+          <div class="quality-metric">
+            <span class="quality-metric-label">শূন্য উৎপাদন</span>
+            <span class="quality-metric-val val-bad">6</span>
+          </div>
+        </div>
+
+        <div class="quality-card critical">
+          <div class="quality-upazila">⚠ কুড়িগ্রাম সদর</div>
+          <div class="quality-metric">
+            <span class="quality-metric-label">মোবাইল কভারেজ</span>
+            <span class="quality-metric-val val-warn">37%</span>
+          </div>
+          <div class="quality-metric">
+            <span class="quality-metric-label">GPS বৈধতা</span>
+            <span class="quality-metric-val val-bad">0%</span>
+          </div>
+          <div class="quality-metric">
+            <span class="quality-metric-label">অ্যানোমালি</span>
+            <span class="quality-metric-val val-warn">3</span>
+          </div>
+          <div class="quality-metric">
+            <span class="quality-metric-label">শূন্য উৎপাদন</span>
+            <span class="quality-metric-val val-warn">1</span>
+          </div>
+        </div>
+
+        <div class="quality-card warning">
+          <div class="quality-upazila">📍 রাজারহাট</div>
+          <div class="quality-metric">
+            <span class="quality-metric-label">মোবাইল কভারেজ</span>
+            <span class="quality-metric-val val-good">100%</span>
+          </div>
+          <div class="quality-metric">
+            <span class="quality-metric-label">GPS বৈধতা</span>
+            <span class="quality-metric-val val-bad">0%</span>
+          </div>
+          <div class="quality-metric">
+            <span class="quality-metric-label">অ্যানোমালি</span>
+            <span class="quality-metric-val val-good">0</span>
+          </div>
+          <div class="quality-metric">
+            <span class="quality-metric-label">GPS ক্যাম্প প্রয়োজন</span>
+            <span class="quality-metric-val val-bad">26 নার্সারী</span>
+          </div>
+        </div>
+
+        <div class="quality-card warning">
+          <div class="quality-upazila">📍 রৌমারী</div>
+          <div class="quality-metric">
+            <span class="quality-metric-label">মোবাইল কভারেজ</span>
+            <span class="quality-metric-val val-bad">0%</span>
+          </div>
+          <div class="quality-metric">
+            <span class="quality-metric-label">GPS বৈধতা</span>
+            <span class="quality-metric-val val-good">100%</span>
+          </div>
+          <div class="quality-metric">
+            <span class="quality-metric-label">অ্যানোমালি</span>
+            <span class="quality-metric-val val-good">0</span>
+          </div>
+          <div class="quality-metric">
+            <span class="quality-metric-label">মোবাইল সংগ্রহ</span>
+            <span class="quality-metric-val val-bad">জরুরি</span>
+          </div>
+        </div>
+
+        <div class="quality-card good">
+          <div class="quality-upazila">✅ নাগেশ্বরী</div>
+          <div class="quality-metric">
+            <span class="quality-metric-label">মোবাইল কভারেজ</span>
+            <span class="quality-metric-val val-good">100%</span>
+          </div>
+          <div class="quality-metric">
+            <span class="quality-metric-label">GPS বৈধতা</span>
+            <span class="quality-metric-val val-good">100%</span>
+          </div>
+          <div class="quality-metric">
+            <span class="quality-metric-label">অ্যানোমালি</span>
+            <span class="quality-metric-val val-warn">2</span>
+          </div>
+          <div class="quality-metric">
+            <span class="quality-metric-label">সমস্যা</span>
+            <span class="quality-metric-val val-warn">ডুপ্লিকেট সন্দেহ</span>
+          </div>
+        </div>
+
+        <div class="quality-card good">
+          <div class="quality-upazila">✅ ফুলবাড়ী</div>
+          <div class="quality-metric">
+            <span class="quality-metric-label">মোবাইল কভারেজ</span>
+            <span class="quality-metric-val val-good">100%</span>
+          </div>
+          <div class="quality-metric">
+            <span class="quality-metric-label">GPS বৈধতা</span>
+            <span class="quality-metric-val val-good">100%</span>
+          </div>
+          <div class="quality-metric">
+            <span class="quality-metric-label">অ্যানোমালি</span>
+            <span class="quality-metric-val val-warn">2</span>
+          </div>
+          <div class="quality-metric">
+            <span class="quality-metric-label">সমস্যা</span>
+            <span class="quality-metric-val val-warn">বাংলা GPS ফরম্যাট</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════
+       DOWNLOAD
+  ═══════════════════════════════════════════════════ -->
+  <section class="download-section" id="download">
+    <div class="container">
+      <p class="section-label" style="color:rgba(255,255,255,0.5)">Full Report</p>
+      <h2 class="section-title">পূর্ণাঙ্গ প্রতিবেদন ডাউনলোড করুন</h2>
+      <p class="download-desc">
+        সকল ১০টি বিভাগ সহ — স্কোরকার্ড, উৎপাদন বিশ্লেষণ, উপজেলাভিত্তিক বিস্তারিত প্রতিবেদন, অ্যানোমালি রেজিস্টার ও কর্মপরিকল্পনা।
+      </p>
+      <a href="kurigram_nursery_report_2026.docx" download class="download-btn">
+        📄 &nbsp; DOCX রিপোর্ট ডাউনলোড করুন
+      </a>
+      <p class="download-meta">
+        DAE Kurigram &nbsp;|&nbsp; Upazila Evaluation Scorecard v2.0 &nbsp;|&nbsp; April 2026 &nbsp;|&nbsp; Source: compiled_nursery_data_updated_v2
+      </p>
+    </div>
+  </section>
+    <!-- ══════════════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════════════ -->
+  <footer>
+    কৃষি সম্প্রসারণ অধিদপ্তর (DAE) &nbsp;|&nbsp; কুড়িগ্রাম জেলা &nbsp;|&nbsp; রংপুর বিভাগ &nbsp;|&nbsp; অতিরিক্ত উপপরিচালক (উদ্যান) &nbsp;|&nbsp; FY ২০২৫–২৬
+  </footer>
+
+  <!-- ══════════════════════════════════════════════════
+       SCROLL REVEAL JS
+  ═══════════════════════════════════════════════════ -->
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((e, i) => {
+        if (e.isIntersecting) {
+          setTimeout(() => e.target.classList.add('visible'), i * 80);
+          observer.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.12 });
+
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+    // Animate bar fills on scroll
+    const barObserver = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.querySelectorAll('.prod-bar-fill, .urg-bar-fill').forEach(bar => {
+            const w = bar.style.width;
+            bar.style.width = '0';
+            setTimeout(() => { bar.style.width = w; }, 100);
+          });
+          barObserver.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.3 });
+
+    document.querySelectorAll('.prod-cards, .urgency-bars').forEach(el => barObserver.observe(el));
+  </script>
+
+</body>
+</html>
