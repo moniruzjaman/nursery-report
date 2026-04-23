@@ -4,24 +4,32 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- ─── Open Graph / WhatsApp Rich Card ─── -->
-  <meta property="og:title"       content="কুড়িগ্রাম জেলা নার্সারী মূল্যায়ন ২০২৬" />
-  <meta property="og:description" content="৯ উপজেলা | ১৩৬ নার্সারী | ২০.৫৫ লক্ষ চারা — পূর্ণাঙ্গ স্কোরকার্ড প্রতিবেদন" />
-  <meta property="og:image"       content="https://nursery-report.vercel.app/cover.png" />
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
-  <meta property="og:type"        content="article" />
-  <meta property="og:url"         content="https://nursery-report.vercel.app/" />
+  <!-- ─── Favicon ─── -->
+  <link rel="icon"             type="image/png" sizes="32x32"   href="favicon-32.png" />
+  <link rel="icon"             type="image/png" sizes="16x16"   href="favicon-16.png" />
+  <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="favicon.png" />
+  <link rel="shortcut icon"    type="image/png"                 href="favicon.png" />
 
-  <!-- Twitter Card fallback -->
-  <meta name="twitter:card"        content="summary_large_image" />
-  <meta name="twitter:title"       content="কুড়িগ্রাম জেলা নার্সারী মূল্যায়ন ২০২৬" />
-  <meta name="twitter:description" content="৯ উপজেলা | ১৩৬ নার্সারী | ২০.৫৫ লক্ষ চারা — পূর্ণাঙ্গ স্কোরকার্ড প্রতিবেদন" />
-  <meta name="twitter:image"       content="https://nursery-report.vercel.app/cover.png" />
+  <!-- ─── Open Graph (Facebook / Messenger / WhatsApp / Telegram) ─── -->
+  <meta property="og:title"            content="কুড়িগ্রাম জেলা নার্সারী মূল্যায়ন ২০২৬" />
+  <meta property="og:description"      content="৯ উপজেলা | ১৩৬ নার্সারী | ২০.৫৫ লক্ষ চারা — পূর্ণাঙ্গ স্কোরকার্ড প্রতিবেদন" />
+  <meta property="og:image"            content="https://nursery-report.vercel.app/cover.png" />
+  <meta property="og:image:secure_url" content="https://nursery-report.vercel.app/cover.png" />
+  <meta property="og:image:width"      content="1200" />
+  <meta property="og:image:height"     content="630" />
+  <meta property="og:image:type"       content="image/png" />
+  <meta property="og:type"             content="article" />
+  <meta property="og:url"              content="https://nursery-report.vercel.app/" />
+  <meta property="og:site_name"        content="DAE Kurigram" />
+  <meta property="og:locale"           content="bn_BD" />
+
+  <!-- ─── Messenger-specific fallback thumbnail ─── -->
+  <meta name="thumbnail"   content="https://nursery-report.vercel.app/thumbnail.png" />
+  <link rel="image_src"    href="https://nursery-report.vercel.app/cover.png" />
 
   <title>কুড়িগ্রাম জেলা নার্সারী মূল্যায়ন ২০২৬</title>
 
-  <!-- Google Fonts: Noto Sans Bengali for proper Bengali rendering -->
+  <!-- Google Fonts: Noto Sans Bengali -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;500;600;700&family=Noto+Serif+Bengali:wght@500;600;700&display=swap" rel="stylesheet" />
@@ -86,24 +94,34 @@
     }
 
     .content h1 {
+      font-family: 'Noto Serif Bengali', serif;
       font-size: 1.75rem;
       color: #ffffff;
-      margin-bottom: 8px;
+      margin-bottom: 6px;
       line-height: 1.4;
     }
 
     .content h2 {
+      font-family: 'Noto Serif Bengali', serif;
       font-size: 1.1rem;
       color: #00e88a;
       font-weight: 600;
       margin-bottom: 20px;
     }
 
+    .content .org {
+      font-size: 0.85rem;
+      color: #6bbf99;
+      margin-bottom: 18px;
+      padding-bottom: 14px;
+      border-bottom: 1px solid #1a4d35;
+    }
+
     /* ── Stats Row ── */
     .stats {
       display: flex;
       gap: 16px;
-      margin: 24px 0;
+      margin: 20px 0;
       flex-wrap: wrap;
     }
 
@@ -118,6 +136,7 @@
     }
 
     .stat-box .number {
+      font-family: 'Noto Serif Bengali', serif;
       font-size: 1.5rem;
       font-weight: 700;
       color: #ffffff;
@@ -133,7 +152,7 @@
     .desc {
       color: #a8d5c0;
       font-size: 0.95rem;
-      line-height: 1.7;
+      line-height: 1.8;
       margin: 20px 0;
     }
 
@@ -144,6 +163,7 @@
       gap: 10px;
       background: linear-gradient(135deg, #00c878, #00a860);
       color: #021a0e;
+      font-family: 'Noto Sans Bengali', sans-serif;
       font-size: 1.05rem;
       font-weight: 700;
       padding: 14px 32px;
@@ -174,16 +194,15 @@
       color: #3d7a5f;
       font-size: 0.78rem;
       margin: 40px 0 30px;
-      line-height: 1.6;
+      line-height: 1.8;
     }
 
-    .footer a {
-      color: #5aa888;
-      text-decoration: none;
-    }
-
-    .footer a:hover {
-      text-decoration: underline;
+    .footer .dae-logo {
+      width: 28px;
+      height: 28px;
+      vertical-align: middle;
+      margin-right: 6px;
+      border-radius: 4px;
     }
 
     /* ── Responsive ── */
@@ -214,6 +233,10 @@
   <div class="content">
     <h1>কুড়িগ্রাম জেলা নার্সারী মূল্যায়ন ২০২৬</h1>
     <h2>পূর্ণাঙ্গ স্কোরকার্ড প্রতিবেদন</h2>
+
+    <div class="org">
+      কৃষি সম্প্রসারণ অধিদপ্তর (DAE) · রংপুর বিভাগ · কুড়িগ্রাম জেলা
+    </div>
 
     <div class="stats">
       <div class="stat-box">
@@ -251,8 +274,9 @@
 
   <!-- ── Footer ── -->
   <div class="footer">
+    <img class="dae-logo" src="favicon.png" alt="DAE" />
     কৃষি সম্প্রসারণ অধিদপ্তর (DAE) · কুড়িগ্রাম<br />
-    অতিরিক্ত উপপরিচালক (উদ্যান) | Rangpur Division
+    অতিরিক্ত উপপরিচালক (উদ্যান) | রংপুর বিভাগ
   </div>
 
 </body>
