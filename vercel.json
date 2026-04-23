@@ -10,33 +10,11 @@
       ]
     },
     {
-      "source": "/thumbnail.png",
-      "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=3600, s-maxage=86400" },
-        { "key": "Content-Type", "value": "image/png" },
-        { "key": "Access-Control-Allow-Origin", "value": "*" }
-      ]
-    },
-    {
       "source": "/favicon.png",
       "headers": [
         { "key": "Cache-Control", "value": "public, max-age=604800" },
         { "key": "Content-Type", "value": "image/png" },
         { "key": "Access-Control-Allow-Origin", "value": "*" }
-      ]
-    },
-    {
-      "source": "/favicon-32.png",
-      "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=604800" },
-        { "key": "Content-Type", "value": "image/png" }
-      ]
-    },
-    {
-      "source": "/favicon-16.png",
-      "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=604800" },
-        { "key": "Content-Type", "value": "image/png" }
       ]
     },
     {
@@ -65,7 +43,9 @@
     {
       "source": "/(.*)",
       "headers": [
-        { "key": "X-Content-Type-Options", "value": "nosniff" }
+        { "key": "X-Content-Type-Options", "value": "nosniff" },
+        { "key": "X-Robots-Tag", "value": "all" },
+        { "key": "Access-Control-Allow-Origin", "value": "*" }
       ]
     }
   ]
